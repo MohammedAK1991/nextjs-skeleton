@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Patua One', sans-serif;
+    }
+
+    html {
+        @apply bg-surface
+    }
+
+    h1 {
+        @apply text-on-surface text-2xl font-title font-bold;
+        letter-spacing: 0.8px;
+    }
+    h2 {
+        @apply text-on-surface text-xl font-bold;
+    }
+    h3 {
+        @apply text-on-surface text-lg font-bold;
+    }
+    h4 {
+        @apply text-on-surface text-base font-bold;
+    }
+    h5 {
+        @apply text-on-surface text-sm font-bold;
+    }
+    h6 {
+        @apply text-on-surface text-xs font-bold;
+    }
+    p {
+        @apply text-on-surface
+    }
+    span{
+        @apply text-on-surface
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    button:focus-visible {
+        outline: none;
+    }
+
+    html, body, #__next, #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: stretch;
+    }
+}
