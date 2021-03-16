@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { useTranslation } from "react-i18next"
 
 /**
- * General Page Layout for ninetofive.
+ * General Page Layout.
  */
 function Layout({ children }: {children: React.ReactNode}) {
 
